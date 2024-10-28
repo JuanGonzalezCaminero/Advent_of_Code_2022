@@ -1,0 +1,9 @@
+for ((i = 1 ; i <= 25 ; i++)); do
+    if ! test -d Day_$i;
+    then
+        echo "Setting up Day_$i"
+        mkdir Day_$i
+        touch Day_$i/puzzle_1.py
+        touch Day_$i/puzzle_2.py
+    fi
+done
