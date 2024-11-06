@@ -25,7 +25,7 @@ for m in moves:
             if((dist_i==0) != (dist_j==0)):
                 # Move the knot straight towards the next
                 if(abs(dist_i)>1): rope[j+1][0] += 1 if dist_i > 0 else -1
-                if(abs(dist_j)>1): rope[j+1][1] += 1 if dist_j > 0 else -1
+                elif(abs(dist_j)>1): rope[j+1][1] += 1 if dist_j > 0 else -1
             # Both coordinates misaligned
             elif(dist_i!=0 and dist_j!=0):
                 # Move the knot diagonally towards the next
