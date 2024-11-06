@@ -16,8 +16,6 @@ rope = [[4, 0] for i in range(10)]
 for m in moves:
     dir = m[0]
     for i in range(m[1]):
-        # Backup the position
-        old_rope = [[j for j in k] for k in rope]
         # Move the head
         rope[0] = list(map(add, rope[0], dir))
         for j in range(len(rope)-1):
